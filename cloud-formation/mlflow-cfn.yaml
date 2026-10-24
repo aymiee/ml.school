@@ -34,6 +34,7 @@ Resources:
         Fn::Base64: !Sub |
           #!/bin/bash
           apt-get update
+          apt-get -y upgrade
           apt-get install -y build-essential python3.12-venv zlib1g-dev unzip
 
           # Create virtual environment
